@@ -1,0 +1,101 @@
+/*
+ * Kristen Gustafson
+ * October 2nd 2023
+ *
+ * This is a CSS file that styles index.html. This file has
+ * blue theme and handles styling "album cards" as well as
+ * any album reviews that the users view.
+ *
+ * Sources to read files:
+ * https://www.w3schools.com/nodejs/nodejs_filesystem.asp
+ *
+*/
+
+body {
+  background-color: #4ADEDE;
+  color: #1E2F97;
+}
+
+h1 {
+  font-size: 40pt;
+}
+
+#review-space, .album-card, #main-des {
+  display: flex;
+  align-items: center;
+}
+
+#main-des {
+  flex-direction: column;
+  width: 80%;
+  margin: auto;
+}
+
+#main-des p, .full-reivew {
+  background-color: #A8D1DF;
+}
+
+.album-card, h1, #warning-box h2 {
+  text-align: center;
+}
+
+#main-des p {
+  border-radius: 25px;
+  border: 5px solid #1E2F97;
+  padding: 35px;
+  font-size: 24pt;
+}
+
+#review-space {
+  width: 100%;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #1AA7EC;
+  height: 5000px;
+}
+
+.album-card img {
+  height: 7%;
+  width: 70%;
+  margin: 10px;
+}
+
+.album-card {
+  width: 30%;
+  flex-direction: column;
+  color: #A8D1DF;
+}
+
+.album-card h2 {
+  margin-top: 5px;
+  padding-bottom: 0%;
+  margin-bottom: 0%;
+}
+
+.album-card h3 {
+  font-style: italic;
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.hidden {
+  display: none;
+}
+
+.full-reivew {
+  border-radius: 25px;
+  border: 5px solid #1E2F97;
+  padding: 30px;
+  font-size: 24pt;
+  height: 500px;
+}
+
+#user-warning h2, #refresh-warning {
+  font-size: 30pt;
+  color: red;
+}
+
+button {
+  margin: 30px;
+  background-color: navy;
+}

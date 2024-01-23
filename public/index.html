@@ -1,0 +1,63 @@
+<!--
+***
+Kristen Gustafson
+November 2, 2023
+
+This is the html file that organizes all of the documented
+reviews so that the user can click on any album. This page also
+organizes the reviews themselves.
+***
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="styles.css">
+  <script src="index.js"></script>
+  <title> Reviews! </title>
+</head>
+<body>
+  <header>
+    <h1> Kristen's reviews </h1>
+  </header>
+  <main>
+    <section id="first-page">
+      <section id="main-des">
+        <p>
+          My name is Kristen and I am a student at UW. I have always enjoyed music
+          and I am always looking for ways to find new music. In may of 2022 I came
+          up with the idea to write down in depth reviews about a large variety of
+          albums. I have done a couple of month since then and this is the official
+          catalog of all of my ratings. Enjoy!
+        </p>
+        <button id="gen-btn"> Generate full catalog! </button>
+        <label for="search-bar"> Find a review: </label>
+        <input type="text" name="search-bar" id="search-bar">
+        <button id="text-btn" disabled> Search Album! </button>
+      </section>
+      <section id="user-warning" class="hidden">
+        <h2> Not a valid album, refresh or try again please! </h2>
+      </section>
+      <section id="refresh-warning" class="hidden">
+        <h2> Something went wrong, please refresh! </h2>
+      </section>
+      <section id="review-space"></section>
+    </section>
+
+    <section id="full-review" class="hidden">
+      <img src="images/nm.png" alt="A music note">
+      <h3>Album:</h3>
+      <h3>Artist:</h3>
+      <h3>Rating:</h3>
+      <h3>Favorite Songs:</h3>
+      <h3>Least Favorite Songs:</h3>
+      <h3>Review:</h3>
+      <h3>Moments:</h3>
+      <h3>Lyrics:</h3>
+      <button> Back </button>
+    </section>
+  </main>
+</body>
+</html>
